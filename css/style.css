@@ -1,6 +1,11 @@
 body{
-    background-image: url(../imagenes/fondonigiri.jpg);
+    background-color: #F9DAF2;
     font-family: calibri, century gothic, sans-serif;
+    margin: 0;
+}
+
+.container{
+    padding: 1rem;
 }
 
 .icon-wsp{
@@ -13,31 +18,66 @@ body{
     bottom: 30px;
 }
 
-
-.container{
-    background-color: #F9DAF2;
-    padding: 1rem;
-}
-
-/*Encabezado*/
+/*Cabecera*/
 header{
     background-color: #FAE9F7 ;
     text-align: center;
-    border: 8px #7A220F ridge;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+} 
+
+header img{
+    width: 100%;
+    max-width: 150px;
+    height: 130px;  
+    display: flex;
+    align-self: center;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+header li img{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    padding: 5px;  
+}
+header li{
+    list-style: none;
+
+}
+
+header a{
+    text-decoration: none;
 }
 
 header h1{
     color: #7A220F;
     font-size: 2.5rem;
+    display: flex;
+    align-self: center;
 }
 
+/*navegacion*/
 nav ul{
+    background-color: #FAE9F7 ;
+    border: 6px #7A220F ridge;
+    border-radius: 1px;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li{
     list-style: none;
-    display: inline-block;
     padding: 0.5rem;
 }
 
@@ -56,14 +96,15 @@ nav a:hover{
 
 /*Receta*/
 .lore{
+    width: 80%;
     text-align: center;
 }
 
 .lore h1{
     color: #7A220F;
     font-size: 1.8rem;
-    text-decoration: underline;
 }
+
 
 section h2{
     text-decoration: underline;
@@ -71,26 +112,54 @@ section h2{
 
 /*Mapa y video*/
 aside{
-    text-align: center;
+    width: 20%;
 }
 
 aside iframe{
-    display: inline-block;
-    width: 100%;
-    max-width: 450px;
-    height: 250px;
-    padding: 8px;
-    border: none;
+    margin-bottom: 16px;
+    border: 0;
+}
+
+/*flexbox*/
+.contenedor-flex{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*Pie de pagina*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
 footer li{
     list-style: none;
-    display: inline-block;
 }
 
 footer a{
     text-decoration: none;
+}
+
+footer p a{
+    font-weight: bold;
+    color: #000;
+}
+
+footer p a:hover{
+    color: rgb(56, 54, 54);
+}
+
+footer p{
+    display: flex;
+    align-self: flex-end;
 }
 
 footer img{
