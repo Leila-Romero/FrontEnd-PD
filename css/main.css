@@ -1,0 +1,202 @@
+/*Fuentes para computadora*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /*Fuente h1 header*/
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap'); /*section h1 y h2*/
+@font-face{
+    font-family: "calibri";
+    src: url(../fuentes/calibri.ttf)
+} /*section p li, nav li y footer p*/
+
+/*Fuentes para celular*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap'); /*Fuente h1 header*/
+
+/*Reglas Generales*/
+body{
+    background-color: #F9DAF2;
+    margin: 0;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.icon-wsp{
+    width: 100%;
+    max-width: 47px;
+    height: 47px;
+    padding: 5px;
+    position: fixed; 
+    right: 30px; 
+    bottom: 30px;
+}
+
+/*Cabecera*/
+header{
+    background-color: #FAE9F7 ;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+} 
+
+header img{
+    width: 100%;
+    max-width: 150px;
+    height: 130px;  
+    display: flex;
+    align-self: center;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 0;
+}
+
+header li img{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    padding: 5px;  
+}
+
+header li{
+    list-style: none;
+
+}
+
+header a{
+    text-decoration: none;
+}
+
+header h1{
+    color: #7A220F;
+    font-family: "Righteous";
+    font-size: 2.5em;
+    display: flex;
+    align-self: center;
+}
+
+/*navegacion*/
+nav ul{
+    background-color: #FAE9F7 ;
+    border: 6px #7A220F ridge;
+    border-radius: 1px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "calibri";
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.063rem;
+}
+
+nav a:hover{
+    background-color: #F9DAF2;
+    padding: 0.5rem;
+}
+
+/*Receta*/
+section{
+    width: 80%;
+}
+
+.lore{
+    text-align: center;
+}
+
+.lore h1{
+    color: #7A220F;
+    font-size: 1.8em;
+}
+
+.lore h1, section h2{
+    font-family: "Varela";
+}
+
+.lore p, section li{
+    font-family: "calibri";
+}
+
+section h2{
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+
+/*Mapa y video*/
+aside{
+    width: 20%;
+}
+
+aside iframe{
+    margin-bottom: 16px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*flexbox receta, mapa y video*/
+.contenedor-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Pie de pagina*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p a{
+    font-weight: bold;
+    color: #000;
+}
+
+footer p a:hover{
+    color: rgb(56, 54, 54);
+}
+
+footer p{
+    display: flex;
+    align-self: flex-end;
+    font-family: "calibri";
+}
+
+footer img{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    padding: 5px;  
+}
+
