@@ -25,8 +25,8 @@ main{
     max-width: 47px;
     height: 47px;
     padding: 5px;
-    position: fixed; 
-    right: 30px; 
+    position: fixed;
+    right: 30px;
     bottom: 30px;
 }
 
@@ -157,6 +157,30 @@ aside iframe{
     flex-wrap: wrap;
 }
 
+/*Tarjetas bootstrap recetas*/
+.card{
+    width: 18rem;
+    margin: 1rem;
+}
+
+.card-img-top{
+    width: 100%;
+    max-width: 286px;
+    height: 191px;
+}
+
+.btn{
+    background-color: #7A220F;
+    font-weight: bold;
+    color: #eee;
+}
+
+.btn:hover{
+    background-color: #7A220F;
+    color: #eee;
+}
+
+
 /*Pie de pagina*/
 footer{
     display: flex;
@@ -243,6 +267,10 @@ footer img{
         padding-bottom: 16px;
     }
 
+    .card-title, .card-text{
+        color: #000;
+    }
+
     footer p a{
       color: #eee;
     }
@@ -295,6 +323,10 @@ footer img{
       
       aside audio{
           padding-bottom: 16px;
+      }
+
+      .card-title, .card-text{
+        color: #000;
       }
   
       footer p a{
