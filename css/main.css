@@ -6,8 +6,9 @@
     src: url(../fuentes/calibri.ttf)
 } /*section p li, nav li y footer p*/
 
-/*Fuentes para celular*/
+/*Fuente para celular y tablet*/
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap'); /*Fuente h1 header*/
+
 
 /*Reglas Generales*/
 body{
@@ -15,7 +16,7 @@ body{
     margin: 0;
 }
 
-.container{
+main{
     padding: 1rem;
 }
 
@@ -193,6 +194,10 @@ footer p{
     font-family: "calibri";
 }
 
+footer iframe{
+    border: 0;
+}
+
 footer img{
     width: 100%;
     max-width: 40px;
@@ -200,3 +205,167 @@ footer img{
     padding: 5px;  
 }
 
+
+/*Media query celular vertical*/
+@media (max-width: 575px) {
+
+    body {
+      background-color: #000;
+      color: #eee;
+    }
+
+    header h1{
+        font-family: Acme;
+      
+    }
+
+    header, nav ul{
+      background-color: #343434;
+    }
+  
+    nav a{
+      color: #eee;
+    }
+  
+    nav a:hover{
+      background-color: #575757;
+    }
+
+    .map-aside{
+        display: none;
+    }
+
+    .map-section{
+        border: 0;
+    }
+    
+    aside audio{
+        padding-bottom: 16px;
+    }
+
+    footer p a{
+      color: #eee;
+    }
+  
+    footer p a:hover{
+      color: #ccc;
+    }
+  
+    .contenedor-flex{
+      flex-direction: column;
+    }
+  
+    section, aside{
+      width: 100%;
+    }
+  
+  }
+
+  /*Media Query celular horizontal (mismo diseño que en el celular vertical)*/
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    body {
+        background-color: #000;
+        color: #eee;
+      }
+  
+      header h1{
+          font-family: Acme;
+        
+      }
+  
+      header, nav ul{
+        background-color: #343434;
+      }
+    
+      nav a{
+        color: #eee;
+      }
+    
+      nav a:hover{
+        background-color: #575757;
+      }
+  
+      .map-aside{
+          display: none;
+      }
+  
+      .map-section{
+          border: 0;
+      }
+      
+      aside audio{
+          padding-bottom: 16px;
+      }
+  
+      footer p a{
+        color: #eee;
+      }
+    
+      footer p a:hover{
+        color: #ccc;
+      }
+    
+      .contenedor-flex{
+        flex-direction: column;
+      }
+    
+      section, aside{
+        width: 100%;
+      }
+  }
+
+
+  /*Media query computadora*/
+  @media (min-width: 767px) {
+
+    .map-section, .h1-section {
+        display: none;
+    }
+
+    aside audio{
+        display: none;
+    }
+  }
+
+  /*Media query tablet*/
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    body{
+        background-color: #eee;
+    }
+
+    header h1{
+        font-family: Acme;
+        color: #eee;
+    }
+
+    header, nav ul{
+        background-color: #448;
+    }
+
+    nav ul{
+        background-color: #5f5fc1;
+        border: 0;
+        padding: 0.5rem;
+    }
+
+    nav a{
+        color: #eee;
+    }
+
+    nav a:hover{
+        background-color: #5151a3;
+    }
+
+    .lore h1{
+        color: #448;
+    }
+
+    .contenedor-flex{
+        flex-direction: column;
+    }
+    
+    section, aside{
+        width: 100%;
+    }
+  }
+  
