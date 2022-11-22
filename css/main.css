@@ -46,8 +46,8 @@ header{
 
 header img{
     width: 100%;
-    max-width: 150px;
-    height: 130px;  
+    max-width: 130px;
+    height: 110px;  
     display: flex;
     align-self: center;
 }
@@ -90,7 +90,7 @@ header h1{
 
 header h1:hover{
     cursor: pointer;
-    color: #8e2209;
+    color:  #8e2209;
 }
 
 /*navegacion*/
@@ -121,6 +121,7 @@ nav a{
 
 nav a:hover{
     background-color: #F9DAF2;
+    border-radius: 10px;
     cursor: pointer;
     color: #000;
     padding: 0.5rem;
@@ -295,7 +296,7 @@ footer img:hover{
     }
   
     nav a:hover{
-      background-color: #575757;
+      background-color: #3e543e44;
       color: #eee;
     }
 
@@ -358,7 +359,7 @@ footer img:hover{
       }
     
       nav a:hover{
-        background-color: #575757;
+        background-color: #3e543e44;
         color: #eee;
       }
   
